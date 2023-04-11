@@ -44,7 +44,7 @@ then it got a simple and compact design pattern,
 which is easier to categorize, reuse, and maintain components only for lonely developpers.
 
 The name is from
-[Glycyrrhiza(licolice)](https://en.wikipedia.org/wiki/Glycyrrhiza)
+[Glycyrrhiza(licorice)](https://en.wikipedia.org/wiki/Glycyrrhiza)
 because I like
 [Jintan](https://en.wikipedia.org/wiki/Jintan_(Japanese_medicine)).
 
