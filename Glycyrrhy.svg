@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="227" preserveAspectRatio="none" style="width:208px;height:227px"
+    width="208">
+    <rect fill="#FFF" height="26.297" rx="2.5" ry="2.5" width="33" x="56.401" y="12" stroke="#000" /><text
+        font-family="Verdana" font-size="14" textLength="27" x="59.401" y="29.995">Cell</text>
+    <rect fill="#FFF" height="26.297" rx="2.5" ry="2.5" width="50" x="47.901" y="73" stroke="#000" /><text
+        font-family="Verdana" font-size="14" textLength="44" x="50.901" y="90.995">Group</text>
+    <rect fill="#FFF" height="26.297" rx="2.5" ry="2.5" width="54" x="45.901" y="134" stroke="#000" /><text
+        font-family="Verdana" font-size="14" textLength="48" x="48.901" y="151.995">Layout</text>
+    <rect fill="#FFF" height="26.297" rx="2.5" ry="2.5" width="48" x="48.901" y="195" stroke="#000" /><text
+        font-family="Verdana" font-size="14" textLength="42" x="51.901" y="212.995">World</text>
+    <rect fill="#FFF" height="26.297" rx="2.5" ry="2.5" width="42" x="159.902" y="134" stroke="#000" /><text
+        font-family="Verdana" font-size="14" textLength="36" x="162.902" y="151.995">Arith</text>
+    <g stroke="#000">
+        <path d="M72.901 38.031v21.37" fill="none" />
+        <path d="M72.901 72.656l4-6-4-6-4 6 4 6z" />
+    </g>
+    <g stroke="#000">
+        <path d="M72.901 99.031v21.37" fill="none" />
+        <path d="M72.901 133.656l4-6-4-6-4 6 4 6z" />
+    </g>
+    <g stroke="#000">
+        <path d="M72.901 160.031v21.37" fill="none" />
+        <path d="M72.901 194.656l4-6-4-6-4 6 4 6z" />
+    </g>
+    <g stroke="#000">
+        <path
+            d="M56.164 33.528C42.5 41.524 24.152 54.885 15.901 72.5c-4.901 10.465-4.847 15.51 0 26 4.976 10.766 13.65 20.021 22.753 27.474"
+            fill="none" />
+        <path d="M49.341 133.876l-2.446-6.783-7.203-.352 2.446 6.784 7.203.351z" />
+    </g>
+    <g stroke="#000">
+        <path d="M108.37 105.835l51.335 29.542" fill="none" stroke-dasharray="7 7" />
+        <path d="M96.641 99.086l3.205 6.46 7.196-.474-3.205-6.46-7.196.474z" />
+    </g>
+    <g stroke="#000">
+        <path d="M113.352 147h46.296" fill="none" stroke-dasharray="7 7" />
+        <path d="M100.104 147l6 4 6-4-6-4-6 4z" />
+    </g>
+    <g stroke="#000">
+        <path d="M108.37 188.165l51.335-29.542" fill="none" stroke-dasharray="7 7" />
+        <path d="M96.641 194.914l7.196.474 3.205-6.459-7.196-.475-3.205 6.46z" />
+    </g>
+</svg>
