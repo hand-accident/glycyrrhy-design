@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="128" preserveAspectRatio="none" style="width:128px;height:128px"
+    width="128" viewBox="-60 -60 120 120">
+    <mask id="prefix__a">
+        <path fill="#fff" d="M-60-60h180v180H-60z" />
+        <circle cy="-16" r="8" />
+    </mask>
+    <g fill="none" stroke="currentColor" stroke-width="2" mask="url(#prefix__a)">
+        <path d="M-6-48V54H6L44 0" />
+        <path d="M6-48v87L32 0" />
+    </g>
+    <path d="M0-48a42 32 0 100 64A32 32 0 0038 0L0-16" stroke-linecap="square" fill="none" stroke="currentColor"
+        stroke-width="9" mask="url(#prefix__a)" />
+    <g fill="currentColor" mask="url(#prefix__a)">
+        <circle cy="-48" r="11" />
+        <circle cx="38" r="11" />
+        <circle cy="-16" r="10" />
+        <circle cy="16" r="10" />
+        <circle cy="50" r="10" />
+    </g>
+</svg>
