@@ -60,7 +60,7 @@ Some of the components are reworkings of
 A description can be found on
 [Github Pages](https://hand-accident.github.io/glycyrrhy-design)
 but I apologize as I've not written English page yet.
-I'd appriciate it if you could read with DeepL or something similar to read it.
+I'd appriciate it if you could read with DeepL or something similar.
 
 ## License
 
