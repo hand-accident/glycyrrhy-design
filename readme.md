@@ -34,32 +34,33 @@
 ## English
 
 [Glycyrrhy Design](https://hand-accident.github.io/glycyrrhy-design)
-is a UI design pattern inspired by
+is a UI design pattern that takes inspiration from
 [Atomic Design](https://atomicdesign.bradfrost.com/).
 
-It was originally conceived for private use and was not intended to be made public.
+It was originally meant for private use,
+but I decided to share it because it turned out well.
 
-So I threw away all the features useful for multi-person development,
-then it got a simple and compact design pattern,
-which is easier to categorize, reuse, and maintain components only for lonely developpers.
+In order to cater specifically to individual developers,
+I discarded all the features that'd be useful for collaborative development.
+As a result, Glycyrrhy Design became a simple and compact design pattern that makes
+it relatively easy for them to classify, reuse, and maintain components.
 
-The name is from
+The name is derived from
 [Glycyrrhiza(licorice)](https://en.wikipedia.org/wiki/Glycyrrhiza)
 because I like
-[Jintan](https://en.wikipedia.org/wiki/Jintan_(Japanese_medicine)).
+[Jintan (a sort of Japanese herbal remedy candy)](https://en.wikipedia.org/wiki/Jintan_(Japanese_medicine)).
 
-In
-[src/lib](https://github.com/hand-accident/glycyrrhy-design/tree/master/src/lib),
-there are five layers according to the pattern as examples.
+As examples, there are five layers in the
+[src/lib](https://github.com/hand-accident/glycyrrhy-design/tree/master/src/lib) directory
+that follow the Glycyrrhy Design.
 
 Some of the components are reworkings of
 [saadeghi/daisyui | MIT license (Copyright (c) 2020 Pouya Saadeghi)](https://github.com/saadeghi/daisyui).
 
-Description can be found on
+A description can be found on
 [Github Pages](https://hand-accident.github.io/glycyrrhy-design)
-but sorry,
-I've not written English page yet though.
-I'd be glad if you could read with DeepL or something.
+but I apologize as I've not written English page yet.
+I'd appriciate it if you could read with DeepL or something similar to read it.
 
 ## License
 
