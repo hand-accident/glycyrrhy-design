@@ -1,7 +1,7 @@
 version: 2
 updates:
-  - package_manager: "npm"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      - interval: "weekly"
+      interval: "weekly"
     target_branch: "master"
