@@ -4,4 +4,4 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    target_branch: "master"
+    target-branch: "master"
