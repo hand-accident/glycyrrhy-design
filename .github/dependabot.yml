@@ -2,5 +2,6 @@ version: 2
 updates:
   - package_manager: "npm"
     directory: "/"
-    update_schedule: "weekly"
+    schedule:
+      - interval: "weekly"
     target_branch: "master"
