@@ -32,7 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-static": "^2.0.1",
+		"@sveltejs/adapter-static": "^2.0.3",
 		"autoprefixer": "^10.4.14",
 		"base-ex": "^0.7.5",
 		"daisyui": "^2.51.5",
