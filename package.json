@@ -36,7 +36,7 @@
 		"autoprefixer": "^10.4.14",
 		"base-ex": "^0.7.5",
 		"daisyui": "^2.51.5",
-		"gh-pages": "^5.0.0",
+		"gh-pages": "^6.0.0",
 		"svelte-preprocess": "^5.0.4",
 		"svelte-preprocess-cssmodules": "^2.2.4",
 		"tailwindcss": "^3.3.1"
