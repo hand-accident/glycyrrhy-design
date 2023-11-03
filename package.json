@@ -35,7 +35,7 @@
 		"@sveltejs/adapter-static": "^2.0.3",
 		"autoprefixer": "^10.4.16",
 		"base-ex": "^0.7.5",
-		"daisyui": "^2.51.5",
+		"daisyui": "^3.9.4",
 		"gh-pages": "^6.0.0",
 		"svelte-preprocess": "^5.0.4",
 		"svelte-preprocess-cssmodules": "^2.2.4",
