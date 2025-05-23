@@ -11,18 +11,42 @@
 		"sourceMap": true,
 		"strict": true,
 		"paths": {
-			"$a": ["./src/lib/arith"],
-			"$a/*": ["./src/lib/arith/*"],
-			"$c": ["./src/lib/cell"],
-			"$c/*": ["./src/lib/cell/*"],
-			"$g": ["./src/lib/group"],
-			"$g/*": ["./src/lib/group/*"],
-			"$l": ["./src/lib/layout"],
-			"$l/*": ["./src/lib/layout/*"],
-			"$w": ["./src/lib/world"],
-			"$w/*": ["./src/lib/world/*"],
-			"$lib": ["./src/lib"],
-			"$lib/*": ["./src/lib/*"]
+			"$a": [
+				"./src/lib/arith"
+			],
+			"$a/*": [
+				"./src/lib/arith/*"
+			],
+			"$c": [
+				"./src/lib/cell"
+			],
+			"$c/*": [
+				"./src/lib/cell/*"
+			],
+			"$g": [
+				"./src/lib/group"
+			],
+			"$g/*": [
+				"./src/lib/group/*"
+			],
+			"$l": [
+				"./src/lib/layout"
+			],
+			"$l/*": [
+				"./src/lib/layout/*"
+			],
+			"$w": [
+				"./src/lib/world"
+			],
+			"$w/*": [
+				"./src/lib/world/*"
+			],
+			"$lib": [
+				"./src/lib"
+			],
+			"$lib/*": [
+				"./src/lib/*"
+			]
 		}
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
