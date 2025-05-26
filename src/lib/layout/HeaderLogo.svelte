@@ -1,20 +1,13 @@
 <script lang="ts">
+	import type { ImageDesc } from '$a/Types.svelte';
 	import Avatar from '$c/Avatar.svelte';
 	import AvatarInner from '$c/AvatarInner.svelte';
-	export let source: string, alternate: string;
-	const src = source,
-		alt = alternate;
+
+	const { source: src, alternate: alt }: ImageDesc = $props();
 </script>
 
-<Avatar class="l">
+<Avatar class="row-span-2">
 	<AvatarInner>
 		<img {src} {alt} />
 	</AvatarInner>
 </Avatar>
-<slot />
-
-<style lang="postcss">
-	.l {
-		@apply row-span-2;
-	}
-</style>

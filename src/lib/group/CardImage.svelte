@@ -1,17 +1,16 @@
 <script lang="ts">
+	import RenderSlot from '$a/snippets/RenderSlot.svelte';
+	import type { CardProp_ } from '$a/Types.svelte';
 	import CardImageLeft from '$c/CardImageLeft.svelte';
 	import CardImageRight from '$c/CardImageRight.svelte';
-	let className = '';
-	export { className as class };
-	export let right = true;
-	export let source: string;
-	export let alternate: string;
+
+	let { right, children, ...props }: CardProp_ = $props();
 </script>
 
 {#if !right}
-	<CardImageLeft class={className} {source} {alternate} />
+	<CardImageLeft {...props} />
 {/if}
-<slot name="cardBody" />
+<RenderSlot {children} />
 {#if right}
-	<CardImageRight class={className} {source} {alternate} />
+	<CardImageRight {...props} />
 {/if}

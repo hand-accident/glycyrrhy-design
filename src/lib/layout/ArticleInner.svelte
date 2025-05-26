@@ -1,27 +1,26 @@
 <script lang="ts">
-	import type { Paragraph as ParagraphType } from '$a/Types.svelte';
+	import type { IndexedParagraph } from '$a/Types.svelte';
 	import CardBody from '$c/CardBody.svelte';
 	import CardSideNeutral from '$c/CardSideNeutral.svelte';
+	import CardImage from '$g/CardImage.svelte';
 	import CardTitle from '$c/CardTitle.svelte';
 	import IndicatorOuter from '$c/IndicatorOuter.svelte';
 	import IndicatorTopStart from '$c/IndicatorTopStart.svelte';
 	import ParagraphWs from '$c/ParagraphWS.svelte';
-	import CardImage from '$g/CardImage.svelte';
 
-	export let paragraph: ParagraphType;
-	export let i: number;
+	let { paragraph, i }: IndexedParagraph = $props();
 </script>
 
-<IndicatorOuter class="l2">
+<IndicatorOuter class="mt-4 w-full">
 	<IndicatorTopStart content={'' + (i + 1)} />
-	<CardSideNeutral class="l0">
+	<CardSideNeutral class="w-full">
 		<CardImage
 			right={i % 2 != 0}
 			source={paragraph.source}
 			alternate={paragraph.alternate}
-			class="l1"
+			class="bg-neutral-content h-full shrink-0 overflow-hidden object-contain"
 		>
-			<CardBody slot="cardBody" class="l3">
+			<CardBody class="grow">
 				<CardTitle>
 					{paragraph.title}
 				</CardTitle>
@@ -32,18 +31,3 @@
 		</CardImage>
 	</CardSideNeutral>
 </IndicatorOuter>
-
-<style lang="postcss">
-	.l0 {
-		@apply w-full;
-	}
-	.l1 {
-		@apply bg-neutral-content h-full object-contain shrink-0 overflow-hidden;
-	}
-	.l2 {
-		@apply mt-4 w-full;
-	}
-	.l3 {
-		@apply grow;
-	}
-</style>

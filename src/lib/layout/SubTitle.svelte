@@ -1,14 +1,7 @@
 <script lang="ts">
+	import type { Content } from '$a/Types.svelte';
 	import ParagraphWs from '$c/ParagraphWS.svelte';
-
-	export let content: string;
+	let { content }: Content = $props();
 </script>
 
-<ParagraphWs {content} class="l" />
-<slot />
-
-<style lang="postcss">
-	.l {
-		@apply col-span-4;
-	}
-</style>
+<ParagraphWs {content} class="col-span-4" />

@@ -1,28 +1,15 @@
 <script lang="ts">
-	let className = '';
-	export { className as class };
-	export let source = '';
-	export let alternate = '';
+	import type { ImageProp } from '$a/Types.svelte';
+	import { tv } from 'tailwind-variants';
+
+	let { class: className = '', source: src = '', alternate: alt = '' }: ImageProp = $props();
+	let c = tv({
+		base: 'flex items-center justify-center min-w-[128px] rounded-ss-[inherit] rounded-se-[unset] rounded-es-[inherit] rounded-ee-[unset]',
+		variants: { inner: { true: 'max-w-[unset] w-full h-full' } },
+		defaultVariants: { inner: false }
+	});
 </script>
 
-<figure class="c d">
-	<img class="c e {className}" src={source} alt={alternate} />
+<figure class={c({})}>
+	<img class={c({ inner: true, className })} {src} {alt} />
 </figure>
-<slot />
-
-<style lang="postcss">
-	.d {
-		@apply flex items-center justify-center min-w-[128px];
-	}
-	.c {
-		border-start-start-radius: inherit;
-		border-start-end-radius: unset;
-		border-end-start-radius: inherit;
-		border-end-end-radius: unset;
-	}
-	.e {
-		max-width: unset;
-		width: 100%;
-		height: 100%;
-	}
-</style>

@@ -1,18 +1,15 @@
 <script lang="ts">
-	let className = '';
-	export { className as class };
-	export let content = '';
+	import RenderSlot from '$a/snippets/RenderSlot.svelte';
+	import type { ContentContainer_ } from '$a/Types.svelte';
+	import { tv } from 'tailwind-variants';
+
+	let { content = '', class: className = '', children }: ContentContainer_ = $props();
+	let c = tv({ base: 'break-keep wrap-break-word' });
 </script>
 
-<p class="c {className}">
+<p class={c({ className })}>
 	{#each content.split(' ') as block}
 		{block}<wbr />
 	{/each}
-	<slot />
+	<RenderSlot {children} />
 </p>
-
-<style lang="postcss">
-	.c {
-		@apply break-keep break-words;
-	}
-</style>

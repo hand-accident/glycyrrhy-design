@@ -1,14 +1,9 @@
 <script lang="ts">
-	let className = '';
-	export { className as class };
+	import RenderSlot from '$a/snippets/RenderSlot.svelte';
+	import type { ContainerProp } from '$a/Types.svelte';
+	import { tv } from 'tailwind-variants';
+	let { class: className = '', children }: ContainerProp = $props();
+	let c = tv({ base: 'block aspect-square overflow-hidden w-16 rounded' });
 </script>
 
-<div class="c {className}">
-	<slot />
-</div>
-
-<style lang="postcss">
-	.c {
-		@apply block aspect-square overflow-hidden w-16 rounded;
-	}
-</style>
+<div class={c({ className })}><RenderSlot {children} /></div>
