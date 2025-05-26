@@ -48,7 +48,7 @@ it relatively easy for them to classify, reuse, and maintain components.
 The name is derived from
 [Glycyrrhiza(licorice)](https://en.wikipedia.org/wiki/Glycyrrhiza)
 because I like
-[Jintan (a sort of Japanese herbal remedy candy)](https://en.wikipedia.org/wiki/Jintan_(Japanese_medicine)).
+[Jintan (a sort of Japanese herbal remedy candy)](<https://en.wikipedia.org/wiki/Jintan_(Japanese_medicine)>).
 
 As examples, there are five layers in the
 [src/lib](https://github.com/hand-accident/glycyrrhy-design/tree/master/src/lib) directory

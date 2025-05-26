@@ -1,14 +1,8 @@
 <script lang="ts">
-	let className = '';
-	export { className as class };
+	import RenderSlot from '$a/snippets/RenderSlot.svelte';
+	import type { ContainerProp } from '$a/Types.svelte';
+	import { tv } from 'tailwind-variants';
+	let { class: className = '', children }: ContainerProp = $props();
 </script>
 
-<div class="c {className}">
-	<slot />
-</div>
-
-<style lang="postcss">
-	.c {
-		@apply relative inline-flex;
-	}
-</style>
+<div class={tv({ base: 'avatar' })({ className })}><RenderSlot {children} /></div>

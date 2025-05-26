@@ -1,13 +1,7 @@
 <script lang="ts">
+	import type { BasicProp } from '$a/Types.svelte';
 	import TextBigBold from '$c/TextBigBold.svelte';
+	let { children }: BasicProp = $props();
 </script>
 
-<TextBigBold class="l">
-	<slot />
-</TextBigBold>
-
-<style lang="postcss">
-	.l {
-		@apply col-span-4;
-	}
-</style>
+<TextBigBold class="col-span-4" {children} />

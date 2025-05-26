@@ -1,14 +1,10 @@
 <script lang="ts">
-	let className = '';
-	export { className as class };
+	import RenderSlot from '$a/snippets/RenderSlot.svelte';
+	import type { ContainerProp_ } from '$a/Types.svelte';
+	import { tv } from 'tailwind-variants';
+	let { class: className = '', children }: ContainerProp_ = $props();
 </script>
 
-<div class="c {className}">
-	<slot />
+<div class={tv({ base: 'flex items-center gap-2 text-3xl font-semibold' })({ className })}>
+	<RenderSlot {children} />
 </div>
-
-<style lang="postcss">
-	.c {
-		@apply flex items-center gap-2 text-xl font-semibold text-3xl;
-	}
-</style>

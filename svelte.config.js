@@ -1,62 +1,23 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { dirname, join } from 'path';
-import { cssModules, linearPreprocess } from 'svelte-preprocess-cssmodules';
-import { fileURLToPath } from 'url';
-import { BaseEx } from 'base-ex';
-
-const baseEx = new BaseEx();
-const base2048 = baseEx.base2048;
-const base16 = baseEx.base16;
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: linearPreprocess([
-		vitePreprocess({
-			style: {
-				css: {
-					postcss: join(dirname(fileURLToPath(import.meta.url)), 'postcss.config.cjs')
-				}
-			}
-		}),
-		cssModules({
-			localIdentName: '[folder][name]___[hash:hex:8]',
-			getLocalIdent: (_, { interpolatedName }) => {
-				let [b, a] = interpolatedName.split(/___/);
-				const mangled = base2048.encode(base16.decode(a));
-				return process.env.NODE_ENV === 'production'
-					? mangled
-					: [
-							b
-								.split(/(?=[A-Z])/)
-								.join('_')
-								.toLowerCase(),
-							mangled
-					  ].join('_');
-			},
-			useAsDefaultScoping: true
-		})
-	]),
+	// Consult https://svelte.dev/docs/kit/integrations
+	// for more information about preprocessors
+	preprocess: vitePreprocess(),
+
 	kit: {
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: null,
-			precompress: false
-		}),
+		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
+		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
+		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
+		adapter: adapter(),
 		alias: {
-			$l: './src/lib/layout',
-			'$l/*': './src/lib/layout/*',
 			$a: './src/lib/arith',
-			'$a/*': './src/lib/arith/*',
 			$c: './src/lib/cell',
-			'$c/*': './src/lib/cell/*',
 			$g: './src/lib/group',
-			'$g/*': './src/lib/group/*',
-			$w: './src/lib/world',
-			'$w/*': './src/lib/world/*',
-			$lib: './src/lib',
-			'$lib/*': './src/lib/*'
+			$l: './src/lib/layout',
+			$w: './src/lib/world'
 		}
 	}
 };

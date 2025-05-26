@@ -1,14 +1,9 @@
 <script lang="ts">
-	let className = '';
-	export { className as class };
+	import RenderSlot from '$a/snippets/RenderSlot.svelte';
+	import type { ContainerProp_ } from '$a/Types.svelte';
+	import { tv } from 'tailwind-variants';
+	let { class: className = '', children }: ContainerProp_ = $props();
+	const c = tv({ base: 'text-center' });
 </script>
 
-<div class="c {className}">
-	<slot />
-</div>
-
-<style lang="postcss">
-	.c {
-		@apply text-center;
-	}
-</style>
+<div class={c({ className })}><RenderSlot {children} /></div>
